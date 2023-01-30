@@ -18,6 +18,7 @@ function onFormSubmit(event) {
     alert("Fill all the fields of form");
   } else {
     console.log(formData);
+    event.currentTarget.reset();
   }
 }
 

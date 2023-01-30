@@ -4,9 +4,7 @@ const outputEl = document.querySelector("#name-output");
 inputEl.addEventListener("input", callback);
 
 function callback() {
-  if (inputEl.value === "") {
-    outputEl.textContent = "Anonymous";
-  } else {
-    outputEl.textContent = inputEl.value;
-  }
+  inputEl.value === ""
+    ? (outputEl.textContent = "Anonymous")
+    : (outputEl.textContent = inputEl.value);
 }

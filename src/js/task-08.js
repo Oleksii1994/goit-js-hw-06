@@ -22,14 +22,15 @@ function onFormSubmit(event) {
   }
 }
 
-// const formData = new FormData(event.currentTarget);
+//   const formData = new FormData(event.currentTarget);
 
-// if (mail === "" || password === "") {
-//   alert("Fill all the fields of form");
-// } else {
-//   formData.forEach((value, key) => {
-//     console.log(`${key}: ${value} `);
-//   });
-// }
-// console.log(formData);
+//   if (mail === "" || password === "") {
+//     alert("Fill all the fields of form");
+//   } else {
+//     formData.forEach((value, key) => {
+//       console.log(`${key}: ${value} `);
+//       event.currentTarget.reset();
+//     });
+//   }
+//   console.log(formData);
 // }

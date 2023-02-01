@@ -21,16 +21,3 @@ function onFormSubmit(event) {
     event.currentTarget.reset();
   }
 }
-
-//   const formData = new FormData(event.currentTarget);
-
-//   if (mail === "" || password === "") {
-//     alert("Fill all the fields of form");
-//   } else {
-//     formData.forEach((value, key) => {
-//       console.log(`${key}: ${value} `);
-//       event.currentTarget.reset();
-//     });
-//   }
-//   console.log(formData);
-// }

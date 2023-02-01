@@ -3,28 +3,19 @@ const inputLength = inputEl.getAttribute("data-length");
 inputEl.addEventListener("blur", isValueCorrect);
 
 function isValueCorrect() {
+  removeClass("invalid");
+
   if (inputEl.value.length === inputLength * 1) {
-    addClassValid();
-    removeClassInvalid();
-  } else if (inputEl.value === "") {
-    removeClassValidInvalid();
+    addClass("valid");
   } else {
-    addClassInvalid();
+    addClass("invalid");
   }
 }
 
-function addClassValid() {
-  inputEl.classList.add("valid");
+function addClass(className) {
+  inputEl.classList.add(`${className}`);
 }
 
-function addClassInvalid() {
-  inputEl.classList.add("invalid");
-}
-
-function removeClassValidInvalid() {
-  inputEl.classList.remove("valid", "invalid");
-}
-
-function removeClassInvalid() {
-  inputEl.classList.remove("invalid");
+function removeClass(className) {
+  inputEl.classList.remove(`${className}`);
 }
